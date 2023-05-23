@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>IndexDrive</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Главная</a></li>
+                <li class="nav-item"><a href="branches.html" class="nav-link">Филиалы</a></li>
+                <li class="nav-item"><a href="booking.html" class="nav-link">Аренда</a></li>
+                <li class="nav-item"><a href="profile.html" class="nav-link">Профиль</a></li>
+                
+            </ul>
+        </header>
+    </div>
+
+
+    <main class="container">
+        <section class="auto-client flex flex-wr flex-je">
+            <form method="post">
+                <h1>Данные о авто</h1>
+                <div class="form-group">
+                    <label for="ID">Идентификатор машины</label>
+                    <input type="number" id="ID" name="ID" required="">
+                </div>
+                <div class="form-group">
+                    <label for="mark">Марка авто</label>
+                    <input type="text" id="mark" name="mark" required="">
+                </div>
+                <div class="form-group">
+                    <label for="password">Название авто</label>
+                    <input type="text" id="name-auto" name="name-auto" required="">
+                </div>
+                <div class="form-group">
+                    <label for="num-auto">Номер машины</label>
+                    <input type="text" id="num-auto" name="num-auto" required="">
+                </div>
+                <div class="form-group">
+                    <label for="date-book">Дата бронирования</label>
+                    <input type="date" id="date-book" name="date-book" required="">
+                </div>
+                <div class="form-group">
+                    <label for="date-return">Дата возврата</label>
+                    <input type="date" id="date-return" name="date-return" required="">
+                </div>
+                <div class="form-group">
+                    <label for="coast">Стоимость бронирования за день</label>
+                    <input type="number" id="coast" name="coast" required="">
+                </div>
+                <div class="form-group">
+                    <label for="branch">Филиал</label>
+                    <input type="password" id="branch" name="branch" required="">
+                </div>
+                <div class="form-group">
+                    <label for="tarif">Тариф</label>
+                    <select>
+                        <option value="Econom">Econom</option>
+                        <option value="Premium">Premium</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tarif">Выберите авто</label>
+                    <select>
+                        <option value="BMW">BMW</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Nissan">Nissan</option>
+                        <option value="Subaru">Subaru</option>
+                        <option value="Mazda">Mazda</option>
+                    </select>
+
+                </div>
+            </form>
+            <form method="post">
+                <h1>Данные о клиенте</h1>
+                <div class="form-group">
+                    <label for="ID">Фамилия</label>
+                    <input type="text" id="ID" name="ID" required="">
+                </div>
+                <div class="form-group">
+                    <label for="ID">Имя</label>
+                    <input type="text" id="ID" name="ID" required="">
+                </div>
+                <div class="form-group">
+                    <label for="mark">Отчество</label>
+                    <input type="text" id="mark" name="mark" required="">
+                </div>
+                <div class="form-group">
+                    <label for="password">Номер телефона</label>
+                    <input type="number" id="name-auto" name="name-auto" required="">
+                </div>
+                <div class="form-group">
+                    <label for="num-auto">Паспортные данные</label>
+                    <input type="number" id="num-auto" name="num-auto" required="">
+                </div>
+                <div class="form-group">
+                    <label for="date-book">Банковская карта</label>
+                    <select>
+                        <option value="**** **** **** 1234">Карта 1 (**** **** **** 1234)</option>
+                        <option value="**** **** **** 5678">Карта 2 (**** **** **** 5678)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date-return">Дата рождения</label>
+                    <input type="date" id="date-return" name="date-return" required="">
+                </div>
+                <div class="form-group">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Срок аренды</th>
+                                <th>Скидка</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1-3 дня</td>
+                                <td>Нет скидки</td>
+                            </tr>
+                            <tr>
+                                <td>4-6 дней</td>
+                                <td>5%</td>
+                            </tr>
+                            <tr>
+                                <td>7-9 дней</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td>10-12 дней</td>
+                                <td>15%</td>
+                            </tr>
+                            <tr>
+                                <td>13-15 дней</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>более 15 дней</td>
+                                <td>25%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="booking-btn">
+                        <button type="submit">Бронировать</button>
+                        <button>Ещё ></button>
+                    </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer container flex flex-wr">
+            <div class="footer-block">
+                <h2 class="footer-block-head">Страницы</h2>
+                <ul class="footer-block-body">
+                    <li><a class="footer-item" href="login.html">Вход</a></li>
+                    <li><a class="footer-item" href="register.html">Регистрация</a></li>
+                    <li><a class="footer-item" href="profile.html">Личный кабинет</a></li>
+                    <li><a class="footer-item" href="booking.html">Бронирования</a></li>
+                    <li><a class="footer-item" href="history.html">История бронирования</a></li>
+                    <li><a class="footer-item" href="branches.html">Филиалы</a></li>
+                    <li><a class="footer-item" href="cards.html">Банковские карты</a></li>
+                    <li><a class="footer-item" href="car-select.html">Выбора автомобиля</a></li>
+                </ul>
+            </div>
+            <div class="footer-block">
+                <h2 class="footer-block-head">Контакты</h2>
+                <ul class="footer-block-body">
+                    <li>8 (800) 555-35-35</li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

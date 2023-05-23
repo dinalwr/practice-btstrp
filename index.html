@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>IndexDrive</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <span class="fs-4">IndexDrive</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Главная</a></li>
+                <li class="nav-item"><a href="branches.html" class="nav-link">Филиалы</a></li>
+                <li class="nav-item"><a href="booking.html" class="nav-link">Аренда</a></li>
+                <li class="nav-item"><a href="pro" class="nav-link">Профиль</a></li>
+            </ul>
+        </header>
+    </div>
+
+
+    <main class="container">
+        <section class="promo">
+            <div class="first-slogan d-flex flex-ac">
+                <h1>
+                    На любой случай,
+                    <br>
+                    любой автомобиль.
+                </h1>
+            </div>
+
+            <div class="first-item d-flex flex-ja flex-ac">
+                <div class="first-item-description d-flex flex-column flex-jb">
+                    <div>
+                        <h1>Перемещайся свободно и экономно</h1>
+                        <div>Для пользователей старше 21 года с опытом вождения три года и больше</div>
+                    </div>
+                    <div class="first-item-links">
+                        <div class="first-item-link">Комфорт</div>
+                        <div class="first-item-link">Удобство</div>
+                        <div class="first-item-link">Экономия</div>
+                    </div>
+                </div>
+                <div class="first-item-image">
+                    <img src="images/cars/car.-png-Images-Free-Transparent.png" alt="">
+                </div>
+            </div>
+            <div class="d-flex flex-ja">
+                <a class="updown d-flex flex-column flex-ac " href="#next">
+                    <div class="updown-item d-flex flex-ac">
+                        <svg width="75" height="43" viewBox="0 0 75 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4L37.5 37.5L71 4" stroke="black" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h2>Ниже!</h2>
+                </a>
+            </div>
+        </section>
+        <section class="product d-flex flex-ac" id="next">
+            <div>
+                <div class="cards d-flex flex-ac flex-jb flex-wr">
+                    <div class="card d-flex flex-column">
+                        <div class="card-image"><img src="images/svg/service1.png" alt=""></div>
+                        <div class="card-title">Договор</div>
+                        <div class="card-text">Договор оформляется законно, с юристом</div>
+                    </div>
+                    <div class="card d-flex flex-column">
+                        <div class="card-image"><img src="images/svg/service2.png" alt=""></div>
+                        <div class="card-title">Поддержка</div>
+                        <div class="card-text">24/7 работает техническая поддержка</div>
+                    </div>
+                    <div class="card d-flex flex-column">
+                        <div class="card-image"><img src="images/svg/service3.png" alt=""></div>
+                        <div class="card-title">Сервис</div>
+                        <div class="card-text">У наших машин постоянное обслуживание</div>
+                    </div>
+                    <div class="card d-flex flex-column">
+                        <div class="card-image"><img src="images/svg/service4.png" alt=""></div>
+                        <div class="card-title">Удобство</div>
+                        <div class="card-text">Используйте наше мобильное приложение</div>
+                    </div>
+                </div>
+                <div class="search">
+                    <div>
+                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Найти машину">
+                    </div>
+
+                    <table id="myTable">
+                        <tr class="top">
+                            <th style="width:33.3%;">Класс</th>
+                            <th style="width:33.3%;">Марка</th>
+                            <th style="width:33.3%;">Модель</th>
+                        </tr>
+                        <tr>
+                            <td>Premium</td>
+                            <td>BMW</td>
+                            <td>3-Series (2021)</td>
+                        </tr>
+                        <tr>
+                            <td>Premium</td>
+                            <td>Toyota</td>
+                            <td>Camry (2021)</td>
+                        </tr>
+                        <tr>
+                            <td>Premium</td>
+                            <td>Nissan</td>
+                            <td>Teana (2019)</td>
+                        </tr>
+                        <tr>
+                            <td>Eco</td>
+                            <td>Subaru</td>
+                            <td>Impreza (2009)</td>
+                        </tr>
+                        <tr>
+                            <td>Eco</td>
+                            <td>Mazda</td>
+                            <td>Axela (2004)</td>
+                        </tr>
+                        <tr>
+                            <td>Eco</td>
+                            <td>BMW</td>
+                            <td>3-Series (1999)</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="d-flex flex-ja flex-ac">
+                    <a class="updown d-flex flex-column flex-ac " href="#news">
+                        <div class="updown-item d-flex flex-ac">
+                            <svg width="75" height="43" viewBox="0 0 75 43" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4L37.5 37.5L71 4" stroke="black" stroke-width="7" stroke-linecap="round" />
+                            </svg>
+
+                        </div>
+                        <h2>Свежие новости!</h2>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-news" id="news">
+                <div class="card-news">
+                    <div class="card__head">
+                        <img src="images/roads/empty-highway-asphalt-road-beautiful-sky_51195-3950.jpg" alt="">
+                    </div>
+                    <div class="card__body">
+                        <input type="checkbox" class="read-more-state" id="post-1" />
+                        <h4>В России вынесли первый приговор за продажу аккаунтов каршеринга</h4>
+                        <p class="read-more-wrap">
+                            В конце 2020 года в России вынесли первый приговор за продажу аккаунтов каршеринга.
+                            Приморский районный суд Петербурга оштрафовал гражданина
+                            <span class="read-more-target">
+                                РФ Романа Амелина на 50 тыс.
+                                рублей. Как сообщает РАПСИ со ссылкой на Объединенную пресс-службу судов Петербурга,
+                                21-летний
+                                молодой человек обвинялся по части 2 статьи 272 УК РФ (неправомерный доступ к
+                                компьютерной
+                                информации, совершенный из корыстной заинтересованности).
+                            </span>
+                        </p>
+                        <label for="post-1" class="read-more-trigger"><svg width="30" height="auto" viewBox="0 0 75 43"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4L37.5 37.5L71 4" stroke="black" stroke-width="7" stroke-linecap="round" />
+                            </svg></label>
+                    </div>
+                    <div class="card__footer">
+                        <div class="user">
+                            <div class="user__info">
+                                <h5>iz.ru</h5>
+                                <small>2 часа назад</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-news">
+                    <div class="card__head">
+                        <img src="images/roads/road.jpeg" alt="">
+                    </div>
+                    <div class="card__body">
+                        <input type="checkbox" class="read-more-state" id="post-2" />
+                        <h4>Программа поддержки каршеринга не заработала из-за российского телематического оборудования
+                        </h4>
+                        <p class="read-more-wrap">
+                            25 августа 2020 года стало известно о том, что программа поддержки
+                            <span class="read-more-target">
+                                каршеринга, которая была
+                                анонсирована ещё в апреле на совещании у президента РФ Владимира Путина, так и не
+                                заработала.
+                            </span>
+                        </p>
+                        <label for="post-2" class="read-more-trigger"><svg width="30" height="auto" viewBox="0 0 75 43"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4L37.5 37.5L71 4" stroke="black" stroke-width="7" stroke-linecap="round" />
+                            </svg></label>
+                    </div>
+                    <div class="card__footer">
+                        <div class="user">
+                            <div class="user__info">
+                                <h5>vgtrk.ru</h5>
+                                <small>Вчера</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-news">
+                    <div class="card__head">
+                        <img src="images/roads/m11-1024x576.jpg" alt="">
+                    </div>
+                    <div class="card__body">
+                        <input type="checkbox" class="read-more-state" id="post-3" />
+                        <h4>Мошенничество с данными клиентов</h4>
+                        <p class="read-more-wrap">
+                            По сообщениям на июль 2020 г каршеринг становится отличным помощником для мошенников. С
+                            помощью селфи
+                            <span class="read-more-target">
+                                клиентов с паспортом на людей берут кредиты в микрофинансовых компаниях.
+                                Также базы каршерингов используют для звонков из фальшивой службы безопасности банков -
+                                так
+                                можно узнать наличие денег на счёте, данные банковских карт.
+                            </span>
+                        </p>
+                        <label for="post-3" class="read-more-trigger"><svg width="30" height="auto" viewBox="0 0 75 43"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4L37.5 37.5L71 4" stroke="black" stroke-width="7" stroke-linecap="round" />
+                            </svg></label>
+                    </div>
+                    <div class="card__footer">
+                        <div class="user">
+                            <div class="user__info">
+                                <h5>vesri.ru</h5>
+                                <small>6 часов назад</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-news">
+                    <div class="card__head">
+                        <img src="images/roads/Road_in_Norway.jpg" alt="">
+                    </div>
+                    <div class="card__body">
+                        <input type="checkbox" class="read-more-state" id="post-4" />
+                        <h4>Столичный каршеринг обвинил Роспотребнадзор в блокировке деятельности.</h4>
+                        <p class="read-more-wrap">
+                            Каршеринг не может возобновить работу по докоронавирусному сценарию из-за отсутствия
+                            <span class="read-more-target">
+                                предписаний Роспотребнадзора. Представители сервисов обвинили ведомство в блокировке их
+                                деятельности и 9 июня направили коллективное обращение.
+                            </span>
+                        </p>
+                        <label for="post-4" class="read-more-trigger"><svg width="30" height="auto" viewBox="0 0 75 43"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4L37.5 37.5L71 4" stroke="black" stroke-width="7" stroke-linecap="round" />
+                            </svg></label>
+                    </div>
+                    <div class="card__footer">
+                        <div class="user">
+                            <div class="user__info">
+                                <h5>vgtrk.ru</h5>
+                                <small>Только что</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer container d-flex flex-wr">
+            <div class="footer-block">
+                <h2 class="footer-block-head">Страницы</h2>
+                <ul class="footer-block-body">
+                    <li><a class="footer-item" href="login.html">Вход</a></li>
+                    <li><a class="footer-item" href="register.html">Регистрация</a></li>
+                    <li><a class="footer-item" href="profile.html">Личный кабинет</a></li>
+                    <li><a class="footer-item" href="booking.html">Бронирования</a></li>
+                    <li><a class="footer-item" href="history.html">История бронирования</a></li>
+                    <li><a class="footer-item" href="branches.html">Филиалы</a></li>
+                    <li><a class="footer-item" href="cards.html">Банковские карты</a></li>
+                    <li><a class="footer-item" href="car-select.html">Выбора автомобиля</a></li>
+                </ul>
+            </div>
+            <div class="footer-block">
+                <h2 class="footer-block-head">Контакты</h2>
+                <ul class="footer-block-body">
+                    <li>8 (800) 555-35-35</li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

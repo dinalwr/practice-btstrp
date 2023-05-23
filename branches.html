@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>IndexDrive</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Главная</a></li>
+                <li class="nav-item"><a href="branches.html" class="nav-link">Филиалы</a></li>
+                <li class="nav-item"><a href="booking.html" class="nav-link">Аренда</a></li>
+                <li class="nav-item"><a href="profile.html" class="nav-link">Профиль</a></li>
+                
+            </ul>
+        </header>
+    </div>
+
+
+    <main class="container">
+        <section class="map-of-branches">
+            <!-- Tab links -->
+            <div class="tab flex">
+                <button class="tablinks" onclick="openCity(event, 'first')">Первый </button>
+                <button class="tablinks" onclick="openCity(event, 'second')">Второй</button>
+                <button class="tablinks" onclick="openCity(event, 'third')">Третий</button>
+                <button class="tablinks" onclick="openCity(event, 'fourth')">Четвёртый</button>
+                <button class="tablinks" onclick="openCity(event, 'fifth')">Пятый</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="first" class="tabcontent">
+                <h3>Филиал</h3>
+                <p>Подольская ул., 20, Санкт-Петербург, 190013</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64016.50106831493!2d30.249518585742!3d59.90698899729604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631fd5a7733f3%3A0x24e27e972effa7f1!2sLightrentcars!5e0!3m2!1sru!2sru!4v1684759564259!5m2!1sru!2sru"
+                    width="100%" height="100%" style="border:0; border-radius: 30px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="container-news">
+                    <div class="card-news">
+                        <div class="card_head"><img src="images/cars/creta-Car-PNG-Image.png" alt=""></div>
+                        <div class="card__footer">Hyundai Creta</div>
+                    </div>
+                    <div class="card-news">
+                        <div class="card__head"><img src="images/cars/camry.webp" alt=""></div>
+                        <div class="card__footer">Toyota Camry</div>
+                    </div>
+                    <div class="card-news">
+                        <div class="card_head"><img
+                                src="images/cars/car-transparent-png-pictures-icons-and-png-backgrounds-6.png" alt="">
+                        </div>
+                        <div class="card__footer">Volkswagen Polo</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="second" class="tabcontent">
+                <h3>Филиал</h3>
+                <p>Лиговский пр., 74, 1.2 этаж, Санкт-Петербург, 191040</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64016.50106831493!2d30.249518585742!3d59.90698899729604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631b1782c78e5%3A0xa2756adbb5b0901d!2zQ09MRVNBLkNPTSwg0L_RgNC-0LrQsNGC0L3QsNGPINC60L7QvNC_0LDQvdC40Y8!5e0!3m2!1sru!2sru!4v1684760075601!5m2!1sru!2sru"
+                    width="100%" height="100%" style="border:0; border-radius: 30px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="container-news">
+                    <div class="card-news">
+                        <div class="card_head"><img src="images/cars/5-2-toyota-car-png.png" alt=""></div>
+                        <div class="card__footer">Hyundai Creta</div>
+                    </div>
+                    <div class="card-news">
+                        <div class="card__head"><img src="images/cars/camry.webp" alt=""></div>
+                        <div class="card__footer">Toyota Camry</div>
+                    </div>
+                    <div class="card-news">
+                        <div class="card_head"><img
+                                src="images/cars/car-transparent-png-pictures-icons-and-png-backgrounds-6.png" alt="">
+                        </div>
+                        <div class="card__footer">Volkswagen Polo</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="third" class="tabcontent">
+                <h3>Филиал</h3>
+                <p>Малый проспект Васильевского острова, 62к1, Санкт-Петербург, 199178</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64016.50106831493!2d30.249518585742!3d59.90698899729604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630f251633d53%3A0x374d3545c84d0c06!2sDayDream!5e0!3m2!1sru!2sru!4v1684760125861!5m2!1sru!2sru"
+                    width="100%" height="100%" style="border:0; border-radius: 30px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="container-news">
+                    <div class="card-news">
+                        <div class="card_head"><img src="images/cars/creta-Car-PNG-Image.png" alt=""></div>
+                        <div class="card__footer">Hyundai Creta</div>
+                    </div>
+                    <div class="card-news">
+                        <div class="card_head"><img src="images/cars/PNGPIX-COM-Buick-Avista-Blue-Car-PNG-Image.png"
+                                alt="">
+                        </div>
+                        <div class="card__footer">Volkswagen Polo</div>
+                    </div>
+                    <div class="card-news">
+                        <div class="card__head"><img src="images/cars/camry.webp" alt=""></div>
+                        <div class="card__footer">Toyota Camry</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="fourth" class="tabcontent">
+                <h3>Филиал</h3>
+                <p>ул. Комсомола, 35, Санкт-Петербург, 195009</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64016.50106831493!2d30.249518585742!3d59.90698899729604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631799da4a91f%3A0xe5db1cba098d1df7!2z0KHQuNGC0Lgt0KDQtdC90YI!5e0!3m2!1sru!2sru!4v1684760561295!5m2!1sru!2sru"
+                    width="100%" height="100%" style="border:0; border-radius: 30px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="container-news">
+                    <div class="card-news">
+                        <div class="card__head"><img src="images/cars/camry.webp" alt=""></div>
+                        <div class="card__footer">Toyota Camry</div>
+                    </div>
+                    <div class="card-news">
+                        <div class="card_head"><img src="images/cars/creta-Car-PNG-Image.png" alt=""></div>
+                        <div class="card__footer">Hyundai Creta</div>
+                    </div>
+                    <div class="card-news">
+                        <div class="card_head"><img
+                                src="images/cars/car-transparent-png-pictures-icons-and-png-backgrounds-6.png" alt="">
+                        </div>
+                        <div class="card__footer">Volkswagen Polo</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="fifth" class="tabcontent">
+                <h3>Филиал</h3>
+                <p>ул. Савушкина, 126А, Санкт-Петербург, 197374</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63881.516386614945!2d30.142058563769346!3d59.97697764589123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469636621cf57741%3A0x1db989d1d8568fe5!2sBrilliant%20Cars!5e0!3m2!1sru!2sru!4v1684760589411!5m2!1sru!2sru"
+                    width="100%" height="100%" style="border:0; border-radius: 30px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="container-news">
+                    <div class="card-news">
+                        <div class="card_head"><img
+                                src="images/cars/car-transparent-png-pictures-icons-and-png-backgrounds-6.png" alt="">
+                        </div>
+                        <div class="card__footer">Volkswagen Polo</div>
+                    </div>
+                    <div class="card-news">
+                        <div class="card_head"><img src="images/cars/creta-Car-PNG-Image.png" alt=""></div>
+                        <div class="card__footer">Hyundai Creta</div>
+                    </div>
+                    <div class="card-news">
+                        <div class="card__head"><img src="images/cars/camry.webp" alt=""></div>
+                        <div class="card__footer">Toyota Camry</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer container flex flex-wr">
+            <div class="footer-block">
+                <h2 class="footer-block-head">Страницы</h2>
+                <ul class="footer-block-body">
+                    <li><a class="footer-item" href="login.html">Вход</a></li>
+                    <li><a class="footer-item" href="register.html">Регистрация</a></li>
+                    <li><a class="footer-item" href="profile.html">Личный кабинет</a></li>
+                    <li><a class="footer-item" href="booking.html">Бронирования</a></li>
+                    <li><a class="footer-item" href="history.html">История бронирования</a></li>
+                    <li><a class="footer-item" href="branches.html">Филиалы</a></li>
+                    <li><a class="footer-item" href="cards.html">Банковские карты</a></li>
+                    <li><a class="footer-item" href="car-select.html">Выбора автомобиля</a></li>
+                </ul>
+            </div>
+            <div class="footer-block">
+                <h2 class="footer-block-head">Контакты</h2>
+                <ul class="footer-block-body">
+                    <li>8 (800) 555-35-35</li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
